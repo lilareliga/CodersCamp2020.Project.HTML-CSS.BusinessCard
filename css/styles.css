@@ -6,40 +6,55 @@ body
 	color:#000000;
 }
 
-.navigation__items {
-    display: flex;
-    justify-content: space-around;
-    background-color: #663366;
-    padding: 2%;
-    }
+#menuShowHide {
+	position:absolute;
+	left:-999em;
+}
 
-.navigation__link {
-    display: flex;
+#mainMenu {
+	list-style:none;
+	text-align:center;
+	padding:0.25em 0;
+	margin-bottom:1em;
+	background:#663366;
+}
+
+#mainMenu li {
+    display:inline;
     text-transform: uppercase;
 }
 
-.navigation__link:hover {
-    background-color: #8b6c8b;
+#mainMenu a {
+	display:inline-block;
+	padding:0.25em 1em;
+	text-decoration:none;
+	color: #fff;
 }
 
-.navigation a {
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
+#mainMenu a:active,
+#mainMenu a:focus,
+#mainMenu a:hover {
+	background:#ddbbdd;
 }
-.navigation__link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-  }
 
 @media only screen and (max-width: 768px) {
-    .navigation__items {
-      flex-direction: column;
-      display: none;
-     }
-    .navigation__link-toggle {
-        display:none;
+    #mainMenu {
+        display: none;
+        overflow: hidden;
     }
-}
+    #mainMenu li {
+        float: left;
+        width: 100%;
+    }
+    #mainMenu a {
+        display:block;
+    }
+    #menuShowHide + label:before {
+        content: "Pokaż menu";
+    }
+    #menuShowHide:checked + label:before {
+        content: "Ukryj menu";
+    }
+    #menuShowHide:checked ~ #mainMenu {
+        display: block;
+    }
