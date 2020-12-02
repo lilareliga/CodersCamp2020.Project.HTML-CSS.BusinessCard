@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body
 {
     background: white;
@@ -36,6 +39,29 @@ body
 #mainMenu a:hover {
 	background:#ddbbdd;
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.portrait {
+    display: flex;
+    justify-content: center;
+    flex: 0 2 40%;
+}
+.bio {
+    flex: 0 1 50%;
+    word-wrap: break-word;
+    align-items: center;
+    hyphens: auto;
+    font-size: 14px;
+    padding-right: 10px;
+    text-align: justify;
+}
 
 @media only screen and (max-width: 768px) {
     #mainMenu {
@@ -57,4 +83,4 @@ body
     }
     #menuShowHide:checked ~ #mainMenu {
         display: block;
-    }
+    }}
