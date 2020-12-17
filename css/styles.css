@@ -97,7 +97,65 @@ h2 {
     text-align: justify;
 }
 
- /* pasje */
+/* aktywizm*/
+.slideshow {
+    overflow-x: hidden;
+    justify-items: center;
+    width: 600px;
+    height: 450px;
+    margin: 3% auto;
+}
+.slideshow img {
+    display: block;
+    background-size: cover;    
+
+} 
+.slideshow-content {
+    list-style: none; 
+    display: flex;
+    padding: 0;
+    margin: 0;
+    animation: slide 8s linear infinite;
+    -webkit-animation: slide 8s linear infinite;
+    -moz-animation: slide 8s linear  infinite;
+    -o-animation: slide 8s linear  infinite;
+    -ms-animation: slide 8s linear  infinite;
+   
+}
+.slideshow-content:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    5% {
+        transform: translateX(0);
+    }
+    6%, 20% {
+        transform: translateX(-600px);
+    }
+    21%, 35% {
+        transform: translateX(-1200px);
+    }
+    36%, 50% {
+        transform: translateX(-1800px);
+    }
+    51%, 65% {
+        transform: translateX(-2400px);
+    }
+    66%, 80% {
+        transform: translateX(-3000px);
+    }
+    81%, 95% {
+        transform: translateX(0);
+    }
+}
+
+.slideshow-text {
+    text-align: justify;
+    margin: 3% 5%;
+}
+
+/* pasje */
 .passion {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -290,5 +348,50 @@ input, #button {
     #contact-form {
         width: 85%;
     }
+    .slideshow {
+        overflow-x: hidden;
+        justify-items: center;
+        width: 300px;
+        height: 225px;
+        margin: 3% auto;
+    }
+    .slideshow-content {
+         animation: slide-small 8s linear infinite;
+        -webkit-animation: slide-small 8s linear infinite;
+        -moz-animation: slide-small 8s linear  infinite;
+        -o-animation: slide-small 8s linear  infinite;
+        -ms-animation: slide-small 8s linear  infinite;
+    }
+    .slideshow img {
+        display: block;
+        background-size: contain;    
+        width: 300px;
+        height: 225px;
+    } 
+
+        @keyframes slide-small {
+        5% {
+            transform: translateX(0);
+        }
+        6%, 21% {
+            transform: translateX(-300px);
+        }
+        22%, 37% {
+            transform: translateX(-600px);
+        }
+        38%, 53% {
+            transform: translateX(-900px);
+        }
+        54%, 69% {
+            transform: translateX(-1200px);
+        }
+        70%, 85% {
+            transform: translateX(-1500px);
+        }
+        86%, 95% {
+            transform: translateX(0);
+        }
+    }
+    
 
 }
