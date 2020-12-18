@@ -6,6 +6,7 @@
 html { 
     font-size: 1rem; 
     scroll-behavior: smooth;
+    scroll-padding-top: 45px;
 }
 
 body {
@@ -25,11 +26,15 @@ h2 {
 }
 
 .mainMenu {
-	list-style: none;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    list-style: none;
 	text-align: center;
-	padding: 0.25em 0;
+    padding: 0.25em 0;
+    margin-top: 0;
 	margin-bottom: 1em;
-    background:#663366;
+    background: radial-gradient(circle, rgba(102,51,102,1) 7%, rgba(255,255,255,1) 100%);
 }
 
 .mainMenu li {
@@ -47,10 +52,13 @@ h2 {
 .mainMenu a:active,
 .mainMenu a:focus,
 .mainMenu a:hover {
-	background:#ddbbdd;
-}
+    color: #000;
  
+}
+
+
 .container {
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -114,16 +122,12 @@ h2 {
     list-style: none; 
     display: flex;
     padding: 0;
-    margin: 0;
-    animation: slide 8s linear infinite;
     -webkit-animation: slide 8s linear infinite;
     -moz-animation: slide 8s linear  infinite;
-    -o-animation: slide 8s linear  infinite;
-    -ms-animation: slide 8s linear  infinite;
-   
+    animation: slide 8s linear infinite;
 }
-.slideshow-content:hover {
-    animation-play-state: paused;
+.slideshow-content:hover{
+    animation-play-state:paused;
 }
 
 @keyframes slide {
@@ -207,9 +211,9 @@ h2 {
     grid-template-columns: 2em 1fr 1em;
     grid-gap: 16px;
     padding: 2em;
-    background: #f1e2f1;
+    background: #A8A8A8;
     margin: 3% auto;
-    color: #663366; 
+    color: #000000; 
   }
 
 #contact-form input, textarea {
@@ -239,10 +243,34 @@ input, #button {
     grid-column: 1 / 2;
     text-align: right;
   }
-  
-  
-  
-  /* form end */
+  /* footer */
+  footer {
+      width: 100%;
+      padding: 2% 3% 1%;
+      text-align: center;
+      background: radial-gradient(circle, rgba(102,51,102,1) 7%, rgba(255,255,255,1) 100%);
+      display: inline-block;
+            
+ }
+ .attribution * {
+     color: white;
+     font-size: 0.8rem;
+     text-decoration: none;
+    margin-top: 1%;     
+ }
+
+ .social-media > a > img {
+     width: auto;
+     height: 40px;
+     margin-right: 3%;    
+     filter: invert(100%);
+     vertical-align: middle;
+ }
+
+ .social-media  #network {
+    filter: grayscale(100%);
+    height: 60px;
+ }
 
   /* media queries */
 
@@ -392,6 +420,12 @@ input, #button {
             transform: translateX(0);
         }
     }
-    
+    .social-media > a > img {
+        height: 25px;
+}
+   
+    .social-media  #network {
+        height: 40px;
+    }
 
 }
