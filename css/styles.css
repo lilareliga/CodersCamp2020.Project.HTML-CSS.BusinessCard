@@ -21,6 +21,7 @@ h2 {
     text-align: center; 
     text-transform: uppercase;
     color: #663366;
+    font-weight: 700;
 }
 #menuShowHide {
 	position:absolute;
@@ -43,6 +44,7 @@ h2 {
 .mainMenu li {
     display:inline;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .mainMenu a {
@@ -393,7 +395,7 @@ body {
     color: #663366;
     background-color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 #menuShowHide:checked + label:before {
@@ -402,7 +404,7 @@ body {
     color: #663366;
     background-color: transparent;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
 }
 #menuShowHide:checked ~ .mainMenu {
     display: block;   
