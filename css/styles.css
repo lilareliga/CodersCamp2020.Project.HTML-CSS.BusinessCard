@@ -86,7 +86,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    justify-self: center;
     padding: 3% 5%;
     text-align: center;
 }
@@ -122,8 +121,10 @@ h2 {
     list-style: none; 
     display: flex;
     padding: 0;
-    -webkit-animation: slide 8s linear infinite;
-    -moz-animation: slide 8s linear  infinite;
+    --webkit-animation: slide 8s linear infinite;
+    --moz-animation: slide 8s linear  infinite;
+    --o-animation: slide-small 8s linear  infinite;
+    --ms-animation: slide-small 8s linear  infinite;
     animation: slide 8s linear infinite;
 }
 .slideshow-content:hover{
@@ -163,7 +164,7 @@ h2 {
 .passion {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto-fill);
+    grid-template-rows: repeat(3, auto);
     gap: 20px 5px;
     padding: 3% 5%;
     justify-items: center;
@@ -256,7 +257,7 @@ input, #button {
      color: white;
      font-size: 0.8rem;
      text-decoration: none;
-    margin-top: 1%;     
+     margin-top: 1%;     
  }
 
  .social-media > a > img {
@@ -384,11 +385,11 @@ input, #button {
         margin: 3% auto;
     }
     .slideshow-content {
-         animation: slide-small 8s linear infinite;
-        -webkit-animation: slide-small 8s linear infinite;
-        -moz-animation: slide-small 8s linear  infinite;
-        -o-animation: slide-small 8s linear  infinite;
-        -ms-animation: slide-small 8s linear  infinite;
+        --webkit-animation: slide-small 8s linear infinite;
+        --moz-animation: slide-small 8s linear  infinite;
+        --o-animation: slide-small 8s linear  infinite;
+        --ms-animation: slide-small 8s linear  infinite;
+        animation: slide-small 8s linear infinite;
     }
     .slideshow img {
         display: block;
