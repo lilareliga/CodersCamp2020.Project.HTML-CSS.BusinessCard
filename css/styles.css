@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-}
+} 
 
 html { 
     font-size: 1rem; 
@@ -13,7 +13,7 @@ body {
     background: white;
     font-family: 'Lato', sans-serif;
     color:#000000;
-    line-height: 1.75;
+    line-height: 1.5;
     max-width: 1366px;
 }
 
@@ -25,25 +25,24 @@ h2 {
 }
 
 #menuShowHide {
-	position:absolute;
+	position: absolute;
 	left:-999em;
 }
 
-.mainMenu {
-    position: fixed;
+.mainMenu { 
     max-width: 1366px;
     width: 100%;
-    z-index: 2;
     list-style: none;
 	text-align: center;
     padding: 0.25em 0;
-    margin-top: 0;
-	margin-bottom: 1em;
+    top: 0;
+    position: fixed;
+    z-index: 2;
     background: radial-gradient(circle, rgba(102,51,102,1) 7%, rgba(255,255,255,1) 100%);
 }
 
 .mainMenu li {
-    display:inline;
+    display:inline-block;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -66,7 +65,7 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    padding: 5% 5%;
+    padding: 4% 5%;
 }
 
 .portrait {
@@ -74,6 +73,10 @@ h2 {
     justify-content: center;
     flex: 0 2 40%;
     margin: 3%;
+}
+.portrait img {
+    width: 250px;
+    height: auto;
 }
 .bio {
     flex: 0 1 50%;
@@ -255,10 +258,10 @@ h2 {
 /* form  */
 
 #contact-form {
-    display: -ms-grid;
     display: grid;    
     width: 50%;
-    -ms-grid-columns: 10% 80% 10%;
+    display: -ms-grid;
+    -ms-grid-columns: 3em 1fr 1em;
     -ms-grid-rows: 30px 10px 30px 10px 30px 10px 200px 10px 30px;
     grid-template-columns: 3em 1fr 1em;
     grid-gap: 16px;
@@ -292,26 +295,6 @@ h2 {
     -ms-grid-column: 2;
     -ms-grid-row: 9;
 } 
-
-#contact-form:first-child {
-    -ms-grid-column: 1;
-    -ms-grid-row: 1;
-}
-
-#contact-form:nth-child(2) {
-    -ms-grid-column: 1;
-    -ms-grid-row: 3;
-}
-
-#contact-form:nth-child(4) {
-    -ms-grid-column: 1;
-    -ms-grid-row: 5;
-}
-
-#contact-form:nth-child(7) {
-    -ms-grid-column: 1;
-    -ms-grid-row: 7;
-}
 
 #contact-form input, textarea {
     background: #fff;
@@ -379,9 +362,7 @@ footer {
 body {
     margin: auto;
 }
-html {
-    font-size: 1.2rem;
-}
+
 }
 
 @media only screen and (max-width: 992px) {  
@@ -462,6 +443,12 @@ body {
 #menuShowHide {
     display: none;
 }
+
+.portrait, .bio {
+    display: flex; 
+    flex: 1 1 50%;
+}
+
 .work_icons {
     -ms-grid-columns: 1fr 1em 1fr;
     -ms-grid-rows: auto 10px auto 10px auto;
@@ -499,14 +486,7 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-html { 
-    font-size: 0.8rem; 
-}
-.portrait, .bio {
-    display: -ms-grid; 
-    display: flex; 
-    flex: 1 1 50%;
-}
+
 #contact-form {
     width: 85%;
 }

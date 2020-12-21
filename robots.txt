@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: 
+
+Sitemap: https://lilareliga.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard

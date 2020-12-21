@@ -11,7 +11,7 @@ Oto wizytówka stworzona w ramach pierwszego projektu Coders Camps, największeg
 Zapraszam do korzystania i przebudowywania kodu na własne potrzeby. 
 
 ## Demo
-[Live do strony](https://lilareliga.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/#kontakt)
+[Live do strony](https://lilareliga.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/)
 
 ## Elementy strony
 Strona zawiera sekcje:
@@ -33,7 +33,7 @@ W projekcie wykorzystałam znajomość:
 - Animacji keyframes
 - Formularza (aby umożliwić wysyłanie wiadomości bez użycia JS czy innych frameworków, podpięłam formularz Google'a)
 - Responsive Web Design 
-Strona została przetestowana na przeglądarkach: Chrome 87, IE 11, Edge 87, Firefox 84, Slimjet 28, and Opera LVL2 core v.72. 
+Strona została sprawdzona na Web Developer Checklist i przetestowana na przeglądarkach: Chrome 87, IE 11, Edge 87, Firefox 84, Slimjet 28, and Opera LVL2 core v.72. 
 
 ## Business card - personal website made with HTML5 & CSS3
 **Project for CodersCamp 2020** 
@@ -48,7 +48,7 @@ I intend to re-build it with upcoming front-end projects.
 Feel free to use for your purposes. 
 
 ## Demo
-[Live demo](https://lilareliga.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/#kontakt)
+[Live demo](https://lilareliga.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/)
 
 ## Features
 - Flexbox 
@@ -59,6 +59,7 @@ Feel free to use for your purposes.
 
 
 The site underwent cross-browser testing on Chrome 87, IE 11, Edge 87, Firefox 84, Slimjet 28, and Opera LVL2 core v.72.
+It was also checked with Web Developer Checklist.
 
 
 
